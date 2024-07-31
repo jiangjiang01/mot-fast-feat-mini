@@ -1,0 +1,191 @@
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+.iconfontbill {
+  display: inline-block;
+}
+
+.placeholder-input {
+  font-size: 14px;
+  color: #b6bcc4;
+}
+.van-popup {
+  overflow-y: hidden !important;
+}
+
+.t-family-number {
+  font-family: DIN Alternate, DIN Alternate;
+}
+
+// 字体颜色
+.t-color-333 {
+  color: #333;
+}
+
+.t-color-orange {
+  color: #ff3d00;
+}
+
+.t-color-green {
+  color: #00cc6a;
+}
+
+.t-color-blue {
+  color: #00649c;
+}
+
+.t-color-black {
+  color: #252525;
+}
+
+.t-color-white {
+  color: #fff;
+}
+
+.t-color-red {
+  color: red;
+}
+
+.t-color-444 {
+  color: #444;
+}
+
+.t-color-555 {
+  color: #555;
+}
+
+.t-color-666 {
+  color: #666;
+}
+
+.t-color-999 {
+  color: #999;
+}
+.t-color-eee {
+  color: #eee;
+}
+
+// 背景颜色
+.t-bg-green {
+  background: #00cc6a;
+}
+.t-bg-orange {
+  background: #ff8017;
+}
+.t-bg-eee {
+  background: #eee;
+}
+
+// width 自适应
+
+.t-w-fil {
+  width: fit-content;
+}
+
+// 组合样式
+// 单行文本展示...
+.t-text-line-1 {
+  @apply t-whitespace-nowrap t-text-ellipsis t-overflow-hidden;
+}
+
+// flex居中布局
+.t-flex-center {
+  @apply t-flex t-justify-center t-items-center;
+}
+
+// flex居中布局
+.t-flex-between {
+  @apply t-flex t-justify-between t-items-center;
+}
+
+// 替换默认按钮样式，不允许修改，调整可使用 tailwindcss 去增加样式名扩展，或者新增一个 class
+.mot-reset-btn {
+  line-height: 1;
+  background: transparent;
+  &::after {
+    border: 0;
+  }
+}
+
+.mot-btn-main,
+.mot-btn-normal {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100rpx;
+  background: #ffe500;
+  color: #252525;
+  font-size: 30rpx;
+  font-weight: 500;
+  box-sizing: border-box;
+  &::after {
+    border: 0;
+  }
+}
+.mot-btn-main {
+  background: #ffe500;
+  color: #252525;
+}
+
+.mot-btn-normal {
+  border: 1rpx solid #999999;
+  background: transparent;
+  color: #333;
+}
+.mot-btn-disabled {
+  border: none;
+  background: #f4f4f4;
+  color: #999;
+}
+
+.mot-animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.mot-animate-ping-five {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) 10;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mot-animate-thumb-five {
+  animation: thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms 10,
+    fadeout 1s linear 10.5s forwards;
+}
+
+.mot-animate-thumb-five-infinite {
+  animation: thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms infinite;
+}
+
+@keyframes thumb {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(12px, 12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0; /* 动画结束时元素不可见 */
+  }
+}
