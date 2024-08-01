@@ -10,6 +10,12 @@
         显示弹窗提示
       </button>
     </view>
+
+    <view class="t-mt-50 t-flex-center">
+      <button class="mot-btn-main" style="width: 50%" @click="gotoFeatAPage">
+        go feat a
+      </button>
+    </view>
   </view>
 
   <ExplainModal
@@ -26,4 +32,10 @@ import { ref } from 'vue';
 import ExplainModal from '@/components/ExplainModal/index.vue';
 
 const visible = ref(false);
+
+const gotoFeatAPage = () => {
+  uni.navigateTo({
+    url: '/pages/featA/index',
+  });
+};
 </script>
