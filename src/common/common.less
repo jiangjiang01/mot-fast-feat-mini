@@ -15,7 +15,9 @@
 }
 
 .t-family-number {
-  font-family: DIN Alternate, DIN Alternate;
+  font-family:
+    DIN Alternate,
+    DIN Alternate;
 }
 
 // 字体颜色
@@ -144,6 +146,10 @@
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+.mot-animate-ping-stiff {
+  animation: ping 700ms steps(1) infinite;
+}
+
 .mot-animate-ping-five {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) 10;
 }
@@ -161,13 +167,16 @@
 }
 
 .mot-animate-thumb-five {
-  animation: thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms 10,
+  animation:
+    thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms 10,
     fadeout 1s linear 10.5s forwards;
 }
 
 .mot-animate-thumb-five-infinite {
-  animation: thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms infinite;
+  animation:
+    thumb 1s cubic-bezier(0, 0, 0.2, 1) 500ms infinite
 }
+
 
 @keyframes thumb {
   0% {
