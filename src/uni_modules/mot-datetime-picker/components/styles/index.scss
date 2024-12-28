@@ -1,0 +1,74 @@
+view,
+text {
+  font-family: PingFang SC;
+}
+.mot-datetime {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom); /* 兼容 IOS>11.2 */
+  padding-bottom: constant(safe-area-inset-bottom); /* 兼容 IOS<11.2 */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 60vh;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  &-edit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    &-desc {
+      color: $text-color-dark;
+    }
+    &-decollator {
+      padding: 0 20rpx;
+      .iconfont {
+        color: #999;
+        transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+      }
+    }
+    &__input {
+      flex-basis: 42%;
+      border-radius: 16rpx;
+      background-color: #f4f4f4;
+      padding: 20rpx 0;
+      text-align: center;
+      line-height: 24px;
+    }
+    .no-value {
+      color: $text-color-disabled;
+    }
+  }
+
+  &-select {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    padding: 15px;
+    &__picker {
+      width: 100%;
+    }
+    &__picker-column {
+      height: 400rpx;
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
+    align-items: center;
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .flex-center {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+}

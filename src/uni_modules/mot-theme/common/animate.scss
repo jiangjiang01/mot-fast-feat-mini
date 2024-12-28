@@ -1,0 +1,149 @@
+/** 动画文件
+* 1.公共动画
+* 2.单个动画
+*/
+
+// 由下往上popup start
+@keyframes change-popup {
+  from {
+    bottom: -35rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes change-popup {
+  from {
+    bottom: -35rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+// 由下往上popup end
+
+// 锁号心跳 start
+@keyframes locker-heart {
+  0% {
+    transform: scale(1);
+  }
+  50.35% {
+    transform: scale(1);
+  }
+  60.65% {
+    transform: scale(2);
+  }
+  76.4% {
+    transform: scale(0.8);
+  }
+  84.27% {
+    transform: scale(1.2);
+  }
+  92.14% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes locker-heart {
+  0% {
+    transform: scale(1);
+  }
+  50.35% {
+    transform: scale(1);
+  }
+  60.65% {
+    transform: scale(2);
+  }
+  76.4% {
+    transform: scale(0.8);
+  }
+  84.27% {
+    transform: scale(1.2);
+  }
+  92.14% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// 锁号心跳 end
+
+// 锁号心跳 start
+@keyframes set-scale {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes set-scale {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// 锁号心跳 end
+// 转圈圈 start
+@keyframes run {
+  from {
+    transform: rotate(0deg);
+    /* Safari and Chrome */
+  }
+  to {
+    transform: rotate(360deg);
+    /* Safari and Chrome */
+  }
+}
+@keyframes run {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+// 转圈圈 end
+
+// 设置取包密码 start
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30%,
+  90% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30%,
+  90% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+}
+// 设置取包密码 end

@@ -1,0 +1,51 @@
+.mot-datetime {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom); /* 兼容 IOS>11.2 */
+  padding-bottom: constant(safe-area-inset-bottom); /* 兼容 IOS<11.2 */
+  &-edit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50rpx 30rpx;
+    box-sizing: border-box;
+    &-decollator {
+      padding: 0 20rpx;
+    }
+    &__input {
+      flex-basis: 40%;
+      border-radius: 16rpx;
+      background-color: #F4F4F4;
+      padding: 20rpx 0;
+      text-align: center;
+    }
+    // &__input-selected {
+    //   background-color: v-bind(selectedColor);
+    // }
+  }
+
+  &-select {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    &__picker {
+      width: 100%;
+      height: 400rpx;
+    }
+    &__picker-column {
+      height: 400rpx;
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+  }
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

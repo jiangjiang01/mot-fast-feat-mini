@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.page-body {
+  overflow-x: hidden;
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 100%;
+}
+.p-holder {
+  font-weight: 400;
+  font-size: 32rpx;
+  color: $text-color-disabled;
+}
+.mot-btn {
+  border-radius: $border-radius;
+  padding: $space-large 0;
+  background: $primary-color;
+  line-height: 1;
+
+  font-size: $font-size-extra-large;
+  color: $text-color-light;
+  &.full {
+    width: 100%;
+  }
+  &.btn-orange {
+    background-color: $warning-color;
+    color: $text-color-light;
+  }
+  &.warning {
+    background-color:$warning-color;
+    color: $text-color-light;
+  }
+  &.plain {
+    background: $text-color-light;
+    color: $primary-color;
+  }
+}
+.btn-primary {
+  background: $primary-color;
+  font-size: $font-size-extra-large;
+  color: $text-color-light;
+}
+.btn {
+  padding: $space-large 0;
+  line-height: 1;
+  font-size: $font-size-extra-large;
+}
+
+// ---####---- flex ---####----
+.flex {
+  display: flex;
+}
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-shrink {
+  flex-shrink: 0;
+}
+
+// 按钮
+.mot-button {
+  position: relative;
+  border-radius: $border-radius;
+  width: 100%;
+  padding: $space-large 0;
+  background: $primary-color;
+  vertical-align: middle;
+  text-align: center;
+  font-size: $font-size-extra-large;
+  color: $text-color-light;
+  transition: opacity 0.2s;
+  line-height: 1;
+    &.plain {
+    border: 1rpx solid $primary-color;
+    background: transparent;
+    color: $primary-color;
+  }
+  &.warning {
+    background: $warning-color-dark;
+    color: $text-color-light;
+    &.plain {
+      border: 1rpx solid $warning-color-dark;
+      background: transparent;
+      color: $warning-color-dark;
+    }
+  }
+  &.default {
+    border-color: 1rpx solid $border-color;
+    background: $border-color; //fix me
+    color:  $text-color-dark;
+  }
+  &.info {
+    background-color: $text-color-light;
+    color: $text-color;
+  }
+  &.disabled,
+  &[disabled] {
+    border-color: $info-color;
+    background-color: $info-color !important;
+  }
+}
+
+// site banner
+.mot {
+  &-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 28rpx 30rpx;
+    background: $bg-color-light;
+    font-size: 28rpx;
+    color: $text-color-dark; // fix me
+  }
+  .site-name {
+    padding-right: 10rpx;
+  }
+  .flex-shrink {
+    flex-shrink: 0;
+  }
+}
+.coupon-popup {
+  border-radius: 16rpx 16rpx 0 0;
+}
+.warning {
+  color: $warning-color;
+}
+.mot-loading {
+  padding: 50rpx 0;
+  text-align: center;
+  color: $text-color-disabled;
+}

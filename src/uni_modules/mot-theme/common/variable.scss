@@ -1,0 +1,36 @@
+
+
+  //font
+  $font-size: 28rpx; // 正文
+  $font-size-small: 24rpx; // 辅助说明 次要文字
+  $font-size-extra-small: 20rpx; // 辅助说明 次要文字
+  $font-size-large: 36rpx;
+  $font-size-extra-large: 40rpx;
+  $font-size-max: 80rpx;  //小铁特有 大型提醒
+  //border-radius
+   $border-radius: 8rpx;
+   $border-radius-small: 4px;
+   $border-radius-medium: rpx;
+   $border-radius-circle: 100%;
+   //border-width
+   $border-width: 2rpx;
+   //border
+   $border: $border-width solid $border-color;
+
+  //spece
+  $space-primary: 12rpx;
+  $space-small: 8rpx;
+  $space-medium: 16rpx;
+  $space-large: 20rpx;
+
+  //font-weight
+  $font-weight: 500;
+  $font-weight-medium: 700;
+  $font-weight-large: bold;
+  /*
+  替换规则
+  // 30rpx  28rpx
+  // password/index 根据需求更改
+  
+  
+  */

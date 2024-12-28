@@ -1,0 +1,185 @@
+// button
+.btn {
+  line-height: 1;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  &.btn--primary {
+    background-color: $primary-color;
+    color: $text-color-light;
+  }
+  &.btn--large {
+    font-size: $font-size-extra-large;
+  }
+  &.btn--block {
+    width: 100%;
+  }
+  &.btn--info {
+    background-color: $border-color-dark !important;
+    color: $base-white;
+    &[disabled] {
+      border-color: $border-color-dark;
+      background-color: $border-color-dark !important;
+    }
+  }
+  &.btn--success {
+    
+  }
+  &.btn--info {
+    
+  }
+  &.btn--warning {
+    
+  }
+  //   &.disabled,
+  // &[disabled] {
+  //   border-color: $border-color-dark;
+  //   background-color: $border-color-dark !important;
+  // }
+}
+.dot i {
+  margin: 2px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: $primary-color;
+  opacity: 0.3;
+  animation: ant-spin-move 1s infinite linear alternate;
+}
+radio {
+  .wx-radio-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .wx-radio-input.wx-radio-input-checked {
+    border: 1rpx solid $error-color-dark !important;
+    background-color: $error-color-dark !important;
+  }
+  .uni-radio-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .uni-radio-input.uni-radio-input-checked {
+    border: 1rpx solid $error-color-dark !important;
+    background-color: $error-color-dark !important;
+  }
+}
+checkbox {
+  .wx-checkbox-input {
+    // border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .wx-checkbox-input.wx-checkbox-input-checked {
+    border: 1rpx solid $primary-color !important;
+    background-color: $primary-color !important;
+    color: $text-color-light !important;
+  }
+  .wx-checkbox-input.wx-checkbox-input-checked::before {
+    font-size: 35rpx;
+  }
+  .uni-checkbox-input {
+    // border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .uni-checkbox-input.uni-checkbox-input-checked::before {
+    font-size: 35rpx;
+  }
+}
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ==================
+         模态窗口
+ ==================== */
+ .cu-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1110;
+  outline: 0;
+  background: $bg-color-shadow;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  perspective: 2000rpx;
+  backface-visibility: hidden;
+  transform: scale(1.185);
+  transition: all 0.3s ease-in-out 0s;
+  &::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: ' ';
+  }
+  &.show {
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition-duration: 0.3s;
+  }
+  &.bottom-modal {
+    margin-bottom: -1000rpx;
+    &::before {
+      vertical-align: bottom;
+    }
+    &.show {
+      margin-bottom: 0;
+    }
+    .cu-dialog {
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+  &.drawer-modal {
+    display: flex;
+    transform: scale(1);
+    .cu-dialog {
+      margin: initial;
+      border-radius: 0;
+      min-width: 200rpx;
+      height: 100%;
+      transition-duration: 0.3s;
+    }
+    &.justify-start {
+      .cu-dialog {
+        transform: translateX(-100%);
+      }
+    }
+    &.justify-end {
+      .cu-dialog {
+        transform: translateX(100%);
+      }
+    }
+    &.show {
+      .cu-dialog {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+.cu-dialog {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10rpx;
+  width: 680rpx;
+  max-width: 100%;
+  background-color: $bg-color-diabled; //fix me
+  vertical-align: middle;
+}

@@ -1,0 +1,113 @@
+
+    //基础色
+    $base-white: #fff;
+    $base-black: #000;
+   //primary
+   $primary-color: #4571eb; // 基础色 //sure
+   $primary-color-dark: #4571eb; // 基础色加深
+   $primary-color-light: #576b95; // 基础色变浅  //sure
+   $primary-color-diabled: #acceec; //基础色置灰的情况 // // sure hover diabled focus
+
+   //success
+   $success-color: #84dd83; // success //sure
+   $success-color-dark: #09bb07; // success加深 //sure
+   $success-color-light: #a9e08f; // success变浅
+   $success-color-diabled: #f5fff0; //success 置灰的情况 //hover diabled focus
+
+   //warning
+   $warning-color: #ff7c30; // warning  //sure
+   $warning-color-dark: #ff7d00; // warning  //sure
+   $warning-color-light: #ffe8a9; // warning //sure
+   $warning-color-diabled: #fffbf1; //warning 置灰的情况 //hover diabled focus
+
+  //error
+   $error-color: #f35f53; // error  // sure
+   $error-color-dark: #ff2323; // error  sure
+   $error-color-light: #ff9d00; // error
+   $error-color-diabled: #f7b2b2; //error 置灰的情况 //hover diabled focus
+
+  //info
+  $info-color: #b7b5b5; // error  // sure fix me
+  $info-color-dark: #e45656; // error
+  $info-color-light: #ff9d00; // error
+  $info-color-diabled: #f7b2b2; //error 置灰的情况 //hover diabled focus
+
+  //文字颜色  text
+  $text-color: #333; 			// 主要文字
+  $text-color-dark: #555;			// 常规文字
+  $text-color-disabled: #999;		// 次要文字
+  $text-color-light: $base-white;			// 辅助说明 //sure
+
+  // border 边框、分隔线颜色
+    $border-color: #dadada; 			 // sure
+    $border-color-dark: #efeff4;			//sure
+    $border-color-disabled:  #efeff4;		 
+    $border-color-light: #b9b9b9;		
+
+  //阴影 颜色
+  $shadow-color:rgb(0 0 0 / 60%); //弹框阴影颜色统一
+  $shadow-color-dark: #333; // sure
+  $shadow-color-light:rgb(0 0 0 / 20%);
+  
+  //background 
+  $bg-color-light: $base-white; //sure
+  $bg-color-primary: #efeff4; //sure
+  $bg-color-dark: #ccc;  // sure
+  $bg-color-diabled: #f9f9f9; //sure
+  $bg-color-shadow: $shadow-color; //sure
+
+
+
+
+  
+  // background-color 替换原则
+  // background-color: #f7f7f7   background-color:$bg-color-primary;
+  // background-color: #efeff4   background-color:$bg-color-primary;
+  // background-color: #fff      background-color:$bg-color-light;
+  // background-color: #ededf2   background-color:$bg-color-primary;
+  // background-color: #ccc      background-color:$bg-color-dark;
+  // background: #fffbf1;        background-color:$bg-color-diabled;
+  
+
+  //font color 替换原则
+  //color: #888  $$   color: $text-color-disabled;
+  //color: #666  $$   color: $text-color-dark;
+  //color: #555  $$   color: $text-color-dark;
+  //color: #999  $$   color: $text-color-disabled;
+  //color: #fff  $$   color: $text-color-light;
+  //color: #777  $$   color: $text-color-dark;
+  //color: #333  $$   color: $text-color;
+  //color: #363636      color: $text-color；
+  //color: #000         color: $text-color;
+
+  //border color 替换原则
+  //border-color: #efeff4  border-color:$border-color;
+  //border-color: #dadada  border-color:$border-color;
+  //border-color: #bbb     border-color:$border-color;
+  //border-color: #e5e5e5  border-color:$border-color;
+  //border-color: #dcdfe6  border-color:$border-color;
+
+  //shadow 替换原则
+  // #333 $shadow-color-dark
+
+  //其他
+  // #ff7c30  $warning-color
+  // #576b95  $primary-color-light
+  // #ff8837  $warning-color
+  // #f3ae2e  $warning-color
+  // #ff7d00  $warning-color-dark
+  // #ffe8a9  $warning-color-light
+  // #f35f53  $error-color
+  // #ea1818  $error-color
+  // #ace7ab  $success-color
+  //#ff2323   $error-color-dark
+  //#ffdca9   $warning-color-light
+  // rgba(0, 0, 0, 0.6)  $bg-color-shadow
+  
+  //#b7b5b5 
+
+  //检查过程中发现的bug
+    // 改变样式了 #ccc   border-top:1rpx solid  $border-color;
+    // .dot 样式去除 没有用到
+    //扣扣线  无效
+    // src\pages\person\index.vue 个人信息整改

@@ -12,6 +12,30 @@
       "style": {
         "navigationBarTitleText": "feat a"
       }
+    },
+    {
+      "path": "pages/whole_people_game/game_home/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/whole_people_game/game_register/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/whole_people_game/integral_detail/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/whole_people_game/integral_skill/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
   "easycom": {

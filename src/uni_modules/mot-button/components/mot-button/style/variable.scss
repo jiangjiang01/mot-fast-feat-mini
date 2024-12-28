@@ -1,0 +1,42 @@
+$buttonsetting: (
+    btn-primary-color: $primary-color,
+    btn-success-color: $success-color,
+    btn-warning-color: $warning-color,
+    btn-remind-color: $remind-color,
+    btn-error-color: $error-color,
+    btn-info-color: #f4f4f4,
+    btn-large-size: $font-size-large,
+    btn-small-size: $font-size-small,
+    btn-small-min-width: 40px,
+    btn-normal-min-width: 110px,
+    btn-large-min-width: 120px,
+    btn-mini-min-width: 100px,
+    btn-mini-size: $font-size-extra-small,
+    btn-large-padding: 26rpx 48rpx,
+    btn-normal-padding:  26rpx 40rpx,
+    btn-small-padding:  12rpx 28rpx,
+    btn-mini-padding: 8rpx 22rpx,
+    btn-large-circle-radius: 48rpx,
+    btn-normal-circle-radius: 44rpx,
+    btn-small-circle-radius:  28rpx,
+    btn-mini-circle-radius:  22rpx,
+    btn-large-round:  96rpx,
+    btn-normal-round:  52rpx,
+    btn-small-round:  56rpx,
+    btn-mini-round:  44rpx,
+
+  );
+  $btntype: (
+      ('type':'primary'),
+      ('type':'success'),
+      ('type':'warning'),
+      ('type':'remind'),
+      ('type':'error'),
+      ('type':'info'),
+  );
+  $btnsize: (
+    ('type':'large'),
+    ('type':'normal'),  //default
+    ('type':'small'),
+    ('type':'mini'),
+);
